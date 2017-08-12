@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contacto</title>
+</head>
+<body>
+	<form method="POST" action="enviar.php">
+		<label for="nombre">Nombre:</label>
+		<input type="text" name="nombre" placeholder="Escribí tu nombre" required>
+		<br>
+		<label for="correo">Email:</label>
+		<input type="email" name="correo" placeholder="Escribí tu correo" rquired>
+		<br>
+		<label for="edad">Edad:</label>
+		<input type="number" name="edad" placeholder="Ingresá tu edad" min=0>
+		<br>
+		<label for="fecha">Fecha de nacimiento:</label>
+		<input type="date" name="fecha">
+		<br>
+		<label for="provincia">Provincia:</label>
+		<select name="provincia">
+			<option value="BA">Buenos Aires</option>
+			<option value="ER">Entre Rios</option>
+			<option value="SF">Santa Fe</option>
+		</select>
+		<br>
+		<label for="terminos">Aceptar Términos y Condiciones</label>
+		<input type="checkbox" name="terminos" required>
+		<br>
+		<label for="shipping">Método de envío:</label>
+		<br>
+		<input type="radio" name="shipping" value=envio> Envio <br>
+		<input type="radio" name="shipping" value=retiro> Retiro <br>
+		<br>
+		<label for="mensaje">Mensaje:</label>
+		<textarea name="mensaje"></textarea>
+		<br>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
